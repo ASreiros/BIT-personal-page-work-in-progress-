@@ -1,0 +1,79 @@
+.navigacija:hover{
+    position: absolute;
+    width: 206px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    /* top: calc(50% - 906px/2); */
+    background-color: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigacija:hover > .logo{
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 69px;
+    /* top: calc(50% - 34px/2 - 384px); */
+    top: 44px; 
+    background-image: url(../assets/logo.svg);
+    background-size: contain; 
+    transition-delay: 0.3s;
+}
+
+.navigacija:hover > .logoline{
+    position: absolute;
+    width: 128.22px;
+    height: 0px;
+    left: 39px;
+    top: 110.03px;
+    border: 2px solid #C4C4C4; 
+    transition-delay: 0.3s;   
+}
+
+.navigacija:hover > .home{
+    position: absolute;
+    width: 195px;
+    height: 57px;
+    left: 11px;
+    /* top: calc(50% - 57px/2 - 282.5px); */
+    top: 142px;
+    background: #FFFFFF; 
+    border-radius: 25px 0px 0px 25px;
+    transition-delay: 0.3s;        
+}
+
+.home > .homeimg{
+    width: 25px;
+    height: 25px;
+    left: 32px;
+    top: 16px;
+    position: absolute;
+}
+
+.navigacija:hover .humble{
+    opacity: 1;
+    display: inline;
+    position:absolute;
+    height:18px;
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    top: 5px;
+    left: 44px; 
+    transition-delay: 0.3s;
+}
+
+.navigacija:hover .homesign{
+    top: 19px;
+    left:76px;
+    color: #02577A;   
+}
+
+.navigacija:hover .gamessign{
+    left: 59px;
+}
+
+

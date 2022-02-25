@@ -1,0 +1,22 @@
+.clock{
+font-weight: 700;
+font-size: 36px;
+line-height: 29.26px;
+font-style: normal; 
+color:#02577A; 
+margin-top: 22px;
+margin-left: 96px; 
+display: flex;
+justify-content: flex-start; 
+}
+
+.value{
+    display: inline;
+    padding: 1px;
+}
+
+.displaynot{
+    opacity: 0;
+}
+
+/* js dalys randasi clock.js */

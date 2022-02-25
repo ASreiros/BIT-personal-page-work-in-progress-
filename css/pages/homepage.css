@@ -1,0 +1,263 @@
+@import url(../components/clock.css);
+@import url(../components/calendar.css);
+
+
+.top-container{
+    width: calc(100vw - 100px);
+    height: 227px;  
+    margin-left: 100px;  
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.top-container > .salute{
+    width: 340px;
+    height: 80px;
+    font-weight:700;
+    font-size: 36px;
+    line-height: 43.88px;
+    margin-top: 89px;
+    margin-left: 115px;
+    color: black;
+    font-style:normal;
+}
+
+.top-container > .whitebox{
+    width: 516px;
+    height: 147px;
+    background-color: #fff;
+    margin-top: 56px;
+    margin-right: 67px;
+    border-radius: 25px;
+}
+
+
+
+
+.middle-container{
+    width: calc(100vw - 100px);
+    height: calc(100vh - 90px - 227px);  
+    margin-left: 100px; 
+    display: flex;
+    justify-content:space-between; 
+    flex-direction: column;
+}
+
+.middle-container > .middlepic{
+    background-image: url(../../img/background-home.png);
+    background-size: cover; 
+    display: block;
+    height: calc(100vh - 90px - 227px - 43px - 121px);
+}
+
+.middle-container > .quote{
+    display: block;
+    height: 121px;
+    width: 898px;
+    padding: 49px  184px;
+    font-size: 16px;
+    line-height: 19,5px;
+    font-weight: 500;
+    border: #02577A solid 2px;
+    border-radius: 25px;
+    margin-left: calc(50% - 449px);
+    text-align: center;
+}
+
+.line{
+    position: absolute;
+    width: 346.01px;
+    height: 0px;
+    left: calc(50% - 346.01px/2 + 50px);
+    bottom: 40px;   
+    border: 1px solid #02577A;    
+}
+
+.basement {
+    position: absolute;
+    width: 184px;
+    height: 24px;
+    left: calc(50% - 184px/2 + 50px); 
+    bottom: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px; 
+    color: #02577A;    
+}
+
+
+@media (max-width:1024px) {
+   
+    .top-container > .salute{
+        width: 240px;
+        height: 60px;
+        font-weight:700;
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 69px;
+        margin-left: 115px;
+        color: black;
+        font-style:normal;
+    }
+
+    .top-container > .whitebox{
+        width: 350px;
+        height: 100px;
+        background-color: #fff;
+        margin-top: 46px;
+        margin-right: 47px;
+        border-radius: 25px;
+    }
+
+    .middle-container > .quote{
+        display: block;
+        height: 80px;
+        width: 500px;
+        padding: 20px  50px;
+        font-size: 16px;
+        line-height: 19,5px;
+        font-weight: 500;
+        border: #02577A solid 2px;
+        border-radius: 25px;
+        margin-left: calc(50% - 250px);
+        text-align: center;
+    }
+    
+
+
+    .calendarauto{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        font-style: normal; 
+        color:black; 
+        margin-top: 5px;
+        margin-left: 30px;  
+        }
+
+        .clock{
+            font-weight: 700;
+            font-size:28px;
+            line-height: 28px;
+            font-style: normal; 
+            color:#02577A; 
+            margin-top: 25px;
+            margin-left: 30px; 
+            display: flex;
+            justify-content: flex-start; 
+            }    
+
+
+}
+
+@media (max-width:650px) {
+    .top-container{
+     flex-direction: column-reverse; 
+     justify-content: center;      
+    }   
+
+    .top-container > .salute{
+        width: 240px;
+        height: 60px;
+        font-weight:700;
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-left: calc(50% - 120px);
+        margin-bottom: 19px;
+        color: black;
+        font-style:normal;
+    }
+
+    .top-container > .whitebox{
+        width: 250px;
+        height: 100px;
+        background-color: #fff;
+        margin-left: calc(50% - 175px + 50px);
+        border-radius: 25px;
+    }
+
+    .calendarauto{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        font-style: normal; 
+        color:black; 
+        margin-top: 5px;
+        margin-left: 30px;  
+        }
+
+        .clock{
+            font-weight: 700;
+            font-size:28px;
+            line-height: 28px;
+            font-style: normal; 
+            color:#02577A; 
+            margin-top: 10px;
+            margin-left: 30px; 
+            display: flex;
+            justify-content: flex-start; 
+            }    
+
+    .middle-container{
+        justify-content: flex-start;
+        gap: 20px;
+        height: 420px;
+    }
+
+    .middle-container > .middlepic{
+        height:350px;
+    }
+
+    .middle-container > .quote{
+        display: block;
+        height: 70px;
+        width: 300px;
+        padding: 10px  30px;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        border: #02577A solid 2px;
+        border-radius: 25px;
+        margin-left: calc(50% - 110px - 40px);
+        text-align: center;    
+    }
+
+    .line{
+        width:200px;
+        left: calc(50% - 100px/2); 
+    }
+
+}
+@media (max-width:400px){
+    .middle-container > .quote{
+        width: 220px;  
+        margin-left: calc(50% - 110px);
+        font-size: 12px;
+        line-height: 12px;  
+    }    
+}
+
+@media (max-height:690px){
+    .line{
+        bottom: 22px;   
+            
+    }
+    
+    .basement {
+        height: 20px;
+        font-size: 11px;
+    }
+    
+    .middle-container{
+        gap: 10px;
+    }
+
+    .middle-container > .quote{
+        height: 50px;
+        padding: 5px  30px;
+    }
+    
+
+}

@@ -1,0 +1,84 @@
+.navigacija{
+    position: absolute;
+    width: 100px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: width 0.5s;
+    z-index: 3;
+}
+
+.navigacija > .logo{
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: 52px; 
+    background-image: url(../assets/logo.svg);
+    background-size: contain;
+    transition-delay: 0s;    
+}
+
+.navigacija > .logoline{
+    position: absolute;
+    width: 62.24px;
+    height: 0px;
+    left: 18px;
+    top: 110.03px;
+    border: 2px solid #C4C4C4;  
+    transition-delay: 0s;  
+}
+
+.navigacija > .home{
+    position: absolute;
+    width: 89px;
+    height: 57px;
+    left: 11px;
+    top: 142px;
+    background: #FFFFFF; 
+    border-radius: 25px 0px 0px 25px; 
+    transition: width 0s;     
+}
+
+.home > .homeimg{
+    width: 25px;
+    height: 25px;
+    left: 32px;
+    top: 16px;
+    position: absolute;
+}
+
+.humble{
+    opacity: 0;
+    transition-delay: 0s; 
+}
+
+.navigacija > .calendar{
+    top: 233px;
+    left: 37px;
+    position: absolute; 
+    height: 25px;
+    width: 25px;
+    background-color: #F7F6FF ;   
+}
+
+.navigacija > .feComponents{
+    top: 292px;
+    left: 37px;
+    position: absolute; 
+    height: 25px;
+    width: 25px;
+    background-color: #F7F6FF ;   
+}
+
+.navigacija > .games{
+    top: 351px;
+    left: 30px;
+    position: absolute; 
+    height: 25px;
+    width: 25px;
+    background-color: #F7F6FF ;   
+}
+
