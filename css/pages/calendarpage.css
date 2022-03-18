@@ -163,26 +163,62 @@ background-color: #ffffff;
     background-color: #ffffff;
     border-radius: 25px;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 5px;
     padding: 10px;
 }
 
+.arrowprev, .arrownext{
+    background-color: white;
+    border: none;
+    width: 30px;
+    background-image: url(../../img/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.arrowprev{
+    text-align:right;
+    grid-column-start: 3; 
+    grid-column-end:3;
+    
+}
+
+.arrownext{
+    margin-left: 40px;
+    grid-column-start: 5; 
+    grid-column-end:5;
+    background-image: url(../../img/arrowR.png);
+}
+
+
 .monthname{
    font-size:24px;
-   grid-column-start: 1; 
-   grid-column-end:8;
+   grid-column-start: 4; 
+   grid-column-end:4;
    text-align: center;
    justify-content: center;
 }
 
-/* .monthname::before{
-    content: url(../../img/arrow.png);
+.yearname{
+    font-size:20px;
+    grid-column-start: 7; 
+    grid-column-end:7;
+    text-align: center;
+    justify-content: center;
+ }
+
+ .monthname::before{
+    content: "";
     width:5px;
-    height: 5x;
-    object-fit: cover;
-} */
+    height: 5px;
+    background-image: url(../../img/arrow.png);
+    background-size: cover;
+} 
 
 .wd-container{
     display: grid;
@@ -191,6 +227,7 @@ background-color: #ffffff;
     border-bottom: 1px solid #c4c4c4;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr;
+    margin-bottom: 0;
 }
 
 .wd{
@@ -208,7 +245,7 @@ background-color: #ffffff;
     display: grid;
     grid-column-start: 1; 
     grid-column-end:8;
-    grid-row-start: 4; 
+    grid-row-start: 3; 
     grid-row-end:10; 
     padding: 0 10px;
     text-align: center;
@@ -218,16 +255,22 @@ background-color: #ffffff;
     grid-template-rows: repeat(6, 1fr);
 }
 
-.nmdate{
+.nmdate, .mdate{
     color:#c4c4c4;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 25px;
+    border-radius: 50%;
 }
 
 .mdate{
     color:black;
-    font-size: 24px;
 }
 
+.cdate{
+    background-color: #02577A;
+    color: #ffffff;
+}
 
 
 
