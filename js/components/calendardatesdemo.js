@@ -29,8 +29,8 @@ if (firstDayIndex < 0) {
     firstDayIndex = 6 
 }
 const m = date.toLocaleString('en-us', { month: 'long' });
-const msh = date.getMonth()
-const d = date.getDate()
+// const msh = date.getMonth()
+// const d = date.getDate()
 const y = date.getFullYear()
 document.querySelector(".monthname").innerHTML = `${m} ${y}`;
 let thismonthmax = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate()

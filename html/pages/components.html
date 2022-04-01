@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/roadmap.css">
+    <link rel="stylesheet" href="../../css/roadmaphover.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/pages/components.css">
+    <link rel="stylesheet" href="../../css/components/slide-carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="../../js/components/slide-carousel.js" defer></script>
+    <script src="../../js/components/Swiper.js" defer></script>
+    <title>Friday challenge</title>
+</head>
+
+<body>
+    <main class="mainscreen">
+        <nav class="navigacija">
+            <a class="link logo" href="#"></a>
+            <div class="logoline"></div>
+            <a class="link home" href="../../index.html"><img class="homeimg" src="../../assets/Home.svg" alt="house">
+                <p class="humble homesign">Home</p>
+            </a>
+            <a class="link calendar" href="../pages/calendarpage.html"><img src="../../assets/calendar.svg" alt="calendar">
+                <p class="humble Calendarsign">Calendar</p>
+            </a>
+            <a class="link feComponents" href="#"><img src="../../assets/FEcomponents.svg" alt="FE components">
+                <p class="humble fesign">FE</p>
+            </a>
+            <a class="link games" href="#"><img src="../../assets/Games.svg" alt="Games">
+                <p class="humble gamessign">Games</p>
+            </a>
+        </nav>
+        <div class="maincontainer">
+             <div class="loader">Loading</div>   
+        
+            <button class="accordeon p1">
+                <h2>Part 1</h2>
+                <p>1.Lorem ipsum dolor sit amet.</p>
+                <p>2.Lorem ipsum dolor sit amet consectetur.</p>
+                <p>3.Lorem, ipsum dolor.</p>
+            </button>
+            <button class="accordeon p2">
+                <h2>Part 2</h2>
+                <p>1.Lorem ipsum dolor sit amet.</p>
+                <p>2.Lorem ipsum dolor sit amet consectetur.</p>
+                <p>3.Lorem, ipsum dolor.</p>
+            </button>
+            <button class="accordeon p3">
+                <h2>Part 3</h2>
+                <p>1.Lorem ipsum dolor sit amet.</p>
+                <p>2.Lorem ipsum dolor sit amet consectetur.</p>
+                <p>3.Lorem, ipsum dolor.</p>
+            </button>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide1.jpg" alt="Puppies">
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide2.jpg" alt="Puppies">
+                    </div>
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide3.jpg" alt="Puppies">
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide4.jpg" alt="Puppies">
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide5.jpg" alt="Puppies">
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="../../img/puppies/Slide6.jpg" alt="Puppies">
+                  </div>
+                </div>
+            </div>
+            <div>
+                <div class="carousel-holder">
+                    <ul
+                        id="ctrack"
+                        class="carousel-track"
+                        onmousedown="mouseDown()"
+                        onselectstart="return false"
+                    >
+                        <li id="s1" class="slide activeslide-0">
+                            <h3>Puppy 1</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide1.jpg" alt="Puppy">
+                            <p>Good boy</p>
+                        </li>
+                        <li id="s2" class="slide activeslide-1">
+                            <h3>Puppy 2</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide2.jpg" alt="Puppy">
+                            <p>good boyz</p>
+                        </li>
+                        <li id="s3" class="slide activeslide-2">
+                            <h3>Puppy 3</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide3.jpg" alt="Puppy">
+                            <p>hot dog</p>
+                        </li>
+                        <li id="s4" class="slide activeslide-3">
+                            <h3>Puppy 4</h3>
+                            <img draggable="false"  class="puppy-img" src="../../img/puppies/Slide4.jpg" alt="Puppy">
+                            <p> Let good boy in</p>
+                        </li>
+                        <li id="s5" class="slide activeslide-4">
+                            <h3>Puppy 5</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide5.jpg" alt="Puppy">
+                            <p>Good boy</p>
+                        </li>
+                        <li id="s6" class="slide">
+                            <h3>Puppy 6</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide6.jpg" alt="Puppy">
+                            <p>Serious good boy</p>
+                        </li>
+                        <li id="s7" class="slide">
+                            <h3>Puppy 7</h3>
+                            <img draggable="false" class="puppy-img" src="../../img/puppies/Slide7.jpg" alt="Puppy">
+                            <p> Intern good boy</p>
+                        </li>
+                        <div class="carousel-block-1"></div>
+                        <div class="carousel-block-2"></div>
+                    </ul>
+                    <button
+                        id="sbl"
+                        class="slideround-btn slide-left"
+                        onclick="slideLeft()"
+                    ></button>
+                    <button
+                        id="sbr"
+                        class="slideround-btn active-slideround-btn slide-right"
+                        onclick="slideRight()"
+                    ></button>
+                </div>
+            </div>    
+        </div>    
+        <div class="basement-holder">
+            <hr class="line">
+            </hr>
+            <footer class="basement">© Baltic Institute of Technology</footer>
+        </div>    
+    </main>
+    
+</body>
+
+</html>
